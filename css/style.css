@@ -408,7 +408,7 @@ footer {
   .filterssearchBar {
     flex-direction: row;
     align-items: flex-start;
-    gap: 0;
+    gap: 1.88 rem;
   }
 
   .hebergements-and-populaires {
