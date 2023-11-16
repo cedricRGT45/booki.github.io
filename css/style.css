@@ -163,7 +163,7 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1.88 rem;
+  gap: 1.88rem;
 }
 
 .filtersSearch {
