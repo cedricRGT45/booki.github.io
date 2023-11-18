@@ -13,35 +13,30 @@
   --button-font-weight: 700;
 }
 
+.rounded-border {
+  border-radius: 0.93rem;
+}
+
+body,
 .directionRow,
 .directionColumn,
 header,
 header nav,
-.fa-location-dot,
-.hebergements-and-populaires,
-.hebergements,
-.hebergements .directionRow,
-.populaires-cards,
-.populaires-cards .card,
-.populaires-title,
-.populaires-cards .card-content,
-.populaires-cards a,
 .searchBar,
+.fa-location-dot,
 .filterssearchBar,
+.filtersSearch,
 .filterssearchBar button,
 .infobar,
-footer,
-.directionRow a,
-.footer .directionRow,
 .icone-infobar,
-.navFooter,
-.card a,
-.activites a {
+.hebergements-and-populaires,
+.hebergements,
+.populaires-title,
+.populaires-cards .card,
+.populaires-cards .card-content,
+footer,
+.navFooter {
   display: flex;
-}
-
-.rounded-border {
-  border-radius: 0.93rem;
 }
 
 .directionRow {
@@ -372,10 +367,6 @@ a {
   padding-left: 1.19rem;
 }
 
-.activites a {
-  flex-direction: column;
-}
-
 /******FOOTER******/
 footer {
   flex-direction: row;
@@ -441,6 +432,7 @@ footer {
   }
 
   .populaires-cards {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 0.87rem;
@@ -472,7 +464,6 @@ footer {
     width: 12.1rem;
     height: 16.88rem;
   }
-
   .activites img {
     width: 100%;
     height: 12.5rem;
@@ -483,7 +474,12 @@ footer {
 
 @media (max-width: 768px) {
   /******Header******/
-
+  .fa-search,
+  .populaires-cards a,
+  .directionRow a,
+  .card a {
+    display: flex;
+  }
   header {
     width: 100%;
     flex-direction: column;
@@ -565,7 +561,6 @@ footer {
   }
 
   .fa-search {
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
@@ -593,6 +588,7 @@ footer {
   .filterssearchBar {
     width: 100%;
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.25rem;
   }
 
