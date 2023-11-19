@@ -14,18 +14,37 @@
 }
 
 .rounded-border {
-  border-radius: 0.9375rem;
+  border-radius: 0.93rem;
+}
+
+body,
+.directionRow,
+.directionColumn,
+header,
+header nav,
+.searchBar,
+.fa-location-dot,
+.filterssearchBar,
+.filtersSearch,
+.filterssearchBar button,
+.infobar,
+.icone-infobar,
+.hebergements-and-populaires,
+.hebergements,
+.populaires-title,
+.populaires-cards .card,
+.populaires-cards .card-content,
+footer,
+.navFooter {
+  display: flex;
 }
 
 .directionRow {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 1.88rem;
 }
 
 .directionColumn {
-  display: flex;
   flex-direction: column;
   gap: 1.88rem;
 }
@@ -38,12 +57,9 @@
 
 header {
   width: 100%;
-  display: flex;
-  flex-direction: row;
 }
 
 header nav {
-  display: flex;
   justify-content: flex-end;
   width: 100%;
   height: 2.19rem;
@@ -75,7 +91,6 @@ header nav {
 /******Body******/
 
 body {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1440px;
@@ -91,8 +106,6 @@ button {
 }
 .main-container {
   box-sizing: border-box;
-  margin: 0;
-  width: 100%;
 }
 
 /******Main conteneur******/
@@ -107,8 +120,6 @@ main {
 }
 
 .searchBar {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   width: 25rem;
   height: 3rem;
@@ -120,7 +131,6 @@ main {
   color: black;
 }
 .fa-location-dot {
-  display: flex;
   height: 3.06rem;
   padding: 0 1rem;
   background: var(--main-bg-color);
@@ -160,25 +170,20 @@ main {
   font-size: 1.5rem;
 }
 .filterssearchBar {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 1.88rem;
 }
 
 .filtersSearch {
-  display: flex;
-  flex-direction: row;
   gap: 0.94rem;
 }
 
 .filterssearchBar button {
   height: 3.12rem;
-  display: flex;
   align-items: center;
   border-radius: 1.56rem;
   border: 2px solid #d9d9d9;
-  background-color: white;
+  background-color: #ffffff;
   gap: 0.62rem;
   padding: 0.25rem 1.18rem;
   font-size: 1.06rem;
@@ -193,7 +198,6 @@ main {
 
 .infobar {
   width: 100%;
-  display: flex;
   align-items: center;
   gap: 0.62rem;
   font-size: 1rem;
@@ -201,7 +205,6 @@ main {
 }
 
 .icone-infobar {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-width: 1.5rem;
@@ -228,7 +231,7 @@ a {
 }
 
 .card {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -251,8 +254,8 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -266,7 +269,6 @@ a {
 /****** Hebergements ***********/
 
 .hebergements {
-  display: flex;
   flex-direction: column;
   width: 65%;
   gap: 1.88rem;
@@ -302,13 +304,11 @@ a {
 }
 
 .populaires-title {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .populaires-cards .card {
-  display: flex;
   margin-top: 33px;
   height: 7rem;
 }
@@ -323,7 +323,6 @@ a {
 .populaires-cards .card-content {
   width: 67%;
   padding-left: 15px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
@@ -370,7 +369,6 @@ a {
 
 /******FOOTER******/
 footer {
-  display: flex;
   flex-direction: row;
   padding: 1.25rem;
   margin: 0 3.12rem;
@@ -378,7 +376,6 @@ footer {
 }
 
 .navFooter {
-  display: flex;
   flex-direction: column;
   justify-self: flex-start;
   gap: 0.94rem;
@@ -400,7 +397,6 @@ footer {
   }
 
   .filtersSearch {
-    display: flex;
     flex-direction: column;
     gap: 0.94rem;
   }
@@ -478,7 +474,12 @@ footer {
 
 @media (max-width: 768px) {
   /******Header******/
-
+  .fa-search,
+  .populaires-cards a,
+  .directionRow a,
+  .card a {
+    display: flex;
+  }
   header {
     width: 100%;
     flex-direction: column;
@@ -565,7 +566,6 @@ footer {
     font-size: 1rem;
     height: 3rem;
     color: white;
-    display: flex;
     border: 1px solid var(--Blue, #0065fc);
     background: var(--Blue, #0065fc);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -587,7 +587,6 @@ footer {
 
   .filterssearchBar {
     width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1.25rem;
@@ -658,7 +657,6 @@ footer {
   }
 
   .populaires-cards a {
-    display: flex;
     width: 100%;
     justify-content: center;
   }
@@ -689,7 +687,6 @@ footer {
   }
 
   .directionRow a {
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -729,7 +726,6 @@ footer {
     height: 12.5rem;
   }
   .card a {
-    display: flex;
     flex-direction: column;
   }
 
